@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Sinkron Kartu RFID</title>
+    <link rel="stylesheet" href="sinkron.css">
+    </head>
+<body>
+    <div class="container">
+            <button class="back-button" onclick="window.history.back()">
+            <i class="fas fa-home"></i>
+            </button>
+        <h1>🔐 Sinkron Kartu RFID</h1>
+        
+        <div id="rfidReader" class="rfid-reader">
+            <div class="rfid-icon">📡</div>
+            <div class="status-text" id="statusText">Tap kartu RFID Anda di sini</div>
+            <small style="color: #999;">Tekan Enter atau Scan untuk simulasi</small>
+        </div>
+
+        <div id="cardInfo" class="card-info">
+            <h3>✅ Informasi Kartu</h3>
+            <div class="info-row">
+                <span class="info-label">UID Kartu:</span>
+                <span class="info-value" id="cardUid">-</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Jenis:</span>
+                <span class="info-value" id="cardType">-</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Status:</span>
+                <span class="info-value" id="cardStatus">-</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Waktu Deteksi:</span>
+                <span class="info-value" id="detectionTime">-</span>
+            </div>
+        </div>
+
+        <button class="btn" id="scanBtn" onclick="startScanning()">Mulai Scan</button>
+        <button class="btn" id="resetBtn" onclick="resetReader()" style="background: #ff5722; display: none;">Reset</button>
+
+        <div id="log" class="log"></div>
+    </div>
+
+    <script src="sinkron.js"></script>
+    </body>
+</html>
