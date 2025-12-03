@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style_log.css">
+    <title>Smart Locker - Dashboard</title>
+</head>
+<body>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="sidebar-popup" id="sidebarPopup">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">MENU</h2>
+            <button class="sidebar-close" id="sidebarClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-menu-item">
+                <a href="#" class="sidebar-menu-link">
+                    <i class="fas fa-home sidebar-menu-icon"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="sidebar-menu-item">
+                <a href="History.html" class="sidebar-menu-link">
+                    <i class="fas fa-history sidebar-menu-icon"></i>
+                    <span>HISTORY</span>
+                </a>
+            </li>
+            <li class="sidebar-menu-item">
+                <a href="riwayat.html" class="sidebar-menu-link">
+                    <i class="fas fa-clock sidebar-menu-icon"></i>
+                    <span>RIWAYAT PENGGUNAAN</span>
+                </a>
+            </li>
+            <li class="sidebar-menu-item">
+                <a href="profile.html" class="sidebar-menu-link">
+                    <i class="fas fa-user sidebar-menu-icon"></i>
+                    <span>PROFILE</span>
+                </a>
+                <li class="sidebar-menu-item">
+                <a href="index.html" class="sidebar-menu-link">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>LOGOUT</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <header class="navbar">
+        <a class="container-navbar">SMART LOCKER</a>
+        <ul class="ul-navbar">
+            <button id="menu-close-button" class="fas fa-times"></button>
+            <li class="li-navbar"><a href="#">HOME</a></li>
+            <li class="li-navbar"><a href="History.html">HISTORY</a></li>
+            <li class="li-navbar"><a href="riwayat.html">RIWAYAT PENGGUNAAN</a></li>
+            <li class="li-navbar"><a href="profile.html">PROFILE</a></li>
+        </ul>
+        <div class="three-dots-menu" id="threeDotsMenu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="container">
+        <h3>Status Loker</h3>
+        
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number" id="availableCount">8</div>
+                <div class="stat-label">Tersedia</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="occupiedCount">7</div>
+                <div class="stat-label">Terisi</div>
+            </div>
+        </div>
+
+        <div class="locker-grid">
+            <div class="locker-box" onclick="toggleLocker(this)">
+                <div class="locker-number">1</div>
+                <div class="locker-status">Tersedia</div>
+            </div>
+            <div class="locker-box occupied" onclick="toggleLocker(this)">
+                <div class="locker-number">2</div>
+                <div class="locker-status">Terisi</div>
+            </div>
+            <div class="locker-box" onclick="toggleLocker(this)">
+                <div class="locker-number">3</div>
+                <div class="locker-status">Tersedia</div>
+            </div>
+            <div class="locker-box occupied" onclick="toggleLocker(this)">
+                <div class="locker-number">4</div>
+                <div class="locker-status">Terisi</div>
+            </div>
+            <div class="locker-box" onclick="toggleLocker(this)">
+                <div class="locker-number">5</div>
+                <div class="locker-status">Tersedia</div>
+            </div>
+            <div class="locker-box" onclick="toggleLocker(this)">
+                <div class="locker-number">6</div>
+                <div class="locker-status">Tersedia</div>
+            </div>
+            <div class="locker-box occupied" onclick="toggleLocker(this)">
+                <div class="locker-number">7</div>
+                <div class="locker-status">Terisi</div>
+            </div>
+            <div class="locker-box" onclick="toggleLocker(this)">
+                <div class="locker-number">8</div>
+                <div class="locker-status">Tersedia</div>
+            </div>
+            <div class="locker-box" onclick="toggleLocker(this)">
+                <div class="locker-number">9</div>
+                <div class="locker-status">Tersedia</div>
+            </div>
+            <div class="locker-box occupied" onclick="toggleLocker(this)">
+                <div class="locker-number">10</div>
+                <div class="locker-status">Terisi</div>
+            </div>
+            <div class="locker-box" onclick="toggleLocker(this)">
+                <div class="locker-number">11</div>
+                <div class="locker-status">Tersedia</div>
+            </div>
+            <div class="locker-box occupied" onclick="toggleLocker(this)">
+                <div class="locker-number">12</div>
+                <div class="locker-status">Terisi</div>
+            </div>
+            <div class="locker-box" onclick="toggleLocker(this)">
+                <div class="locker-number">13</div>
+                <div class="locker-status">Tersedia</div>
+            </div>
+            <div class="locker-box occupied" onclick="toggleLocker(this)">
+                <div class="locker-number">14</div>
+                <div class="locker-status">Terisi</div>
+            </div>
+            <div class="locker-box" onclick="toggleLocker(this)">
+                <div class="locker-number">15</div>
+                <div class="locker-status">Tersedia</div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
